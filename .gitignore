@@ -1,27 +1,21 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # Dependencies
 node_modules/
-dist/
+/.pnp
+.pnp.js
 
-# Build outputs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Testing
+/coverage
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
+# Production
+/dist
+/build
+/www
 
 # Quasar
-.quasar/
-www/
+/.quasar
+/quasar.config.*.tmp.js
 
 # Electron
 *.exe
@@ -29,15 +23,70 @@ www/
 *.AppImage
 *.deb
 *.rpm
+*.snap
+*.pkg
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
 
 # Environment
 .env
 .env.local
-.env.production
+.env.development.local
+.env.test.local
+.env.production.local
+.env.replit
 
-# Testing
-coverage/
+# Replit
+.replit_history/
+.replit-secrets/
 
 # Temporary files
 tmp/
 temp/
+.cache/
+
+# Build artifacts
+*.tsbuildinfo
+eslintcache
+
+# Package manager locks (optional - uncomment if you want to ignore)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Local development
+*.local
+*.local.*
+
+# Secrets
+*.pem
+*.key
+*.crt
+secrets/
+.secrets/
