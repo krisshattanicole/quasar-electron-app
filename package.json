@@ -1,0 +1,32 @@
+{
+  "name": "quasar-electron-app",
+  "version": "1.0.0",
+  "description": "Quasar Electron Desktop App",
+  "productName": "QuasarElectronApp",
+  "author": "Administrator",
+  "private": true,
+  "scripts": {
+    "dev": "quasar dev -m electron",
+    "build": "quasar build -m electron",
+    "build:win": "quasar build -m electron -T windows"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.9",
+    "pinia": "^2.1.7",
+    "quasar": "^2.14.0",
+    "vue": "^3.4.0",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^1.7.3",
+    "@types/node": "^20.10.0",
+    "autoprefixer": "^10.4.16",
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "engines": {
+    "node": "^22 || ^20 || ^18",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
