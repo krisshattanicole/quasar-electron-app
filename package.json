@@ -1,14 +1,28 @@
 {
   "name": "quasar-electron-app",
   "version": "1.0.0",
-  "description": "Quasar Electron Desktop App",
+  "description": "Quasar Electron Desktop App with Replit & GitHub Integration",
   "productName": "QuasarElectronApp",
-  "author": "Administrator",
+  "author": "krisshattanicole",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krisshattanicole/quasar-electron-app.git"
+  },
+  "keywords": [
+    "quasar",
+    "electron",
+    "desktop",
+    "replit",
+    "vue"
+  ],
   "private": true,
   "scripts": {
     "dev": "quasar dev -m electron",
     "build": "quasar build -m electron",
-    "build:win": "quasar build -m electron -T windows"
+    "build:win": "quasar build -m electron -T windows",
+    "replit:dev": "quasar dev -m electron",
+    "replit:build": "quasar build -m electron",
+    "github:release": "node scripts/github-release.js"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.9",
@@ -19,6 +33,7 @@
   },
   "devDependencies": {
     "@quasar/app-vite": "^1.7.3",
+    "@replit/ai": "^0.0.6",
     "@types/node": "^20.10.0",
     "autoprefixer": "^10.4.16",
     "electron": "^28.0.0",

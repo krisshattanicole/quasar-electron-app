@@ -1,0 +1,20 @@
+name: Replit Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy-replit:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Trigger Replit Deployment
+      run: |
+        curl -X POST "https://replit.com/api/deploy" \
+          -H "Authorization: Bearer ${{ secrets.REPLIT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"repo": "krisshattanicole/quasar-electron-app", "branch": "main"}'
+      if: ${{ secrets.REPLIT_TOKEN != '' }}

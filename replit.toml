@@ -1,0 +1,42 @@
+# Replit Configuration for Quasar Electron App
+# This file configures the Replit development environment
+
+# Language runtime
+language = "nodejs"
+
+# Entry point for the application
+entry = "npm run dev"
+
+# Environment variables
+[env]
+NODE_ENV = "development"
+QUASAR_MODE = "electron"
+
+# Secrets to configure (add these in Replit Secrets tab)
+# - GITHUB_TOKEN: GitHub Personal Access Token
+# - REPLIT_TOKEN: Replit API Token (optional)
+
+# Features
+[features]
+# Enable GitHub integration
+github = true
+
+# Enable package manager
+package_manager = "npm"
+
+# Enable build system
+build = true
+
+# Commands
+[commands]
+# Development server
+dev = "npm run dev"
+
+# Build for production
+build = "npm run build"
+
+# Install dependencies
+install = "npm install"
+
+# Test
+test = "npm test"
