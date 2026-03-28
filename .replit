@@ -1,0 +1,65 @@
+# Replit Configuration
+# See https://docs.replit.com/replit-ide/replit-repl-configuration
+
+# Language runtime
+language = "nodejs"
+
+# Entry point - what runs when you click Run
+entry = "npm run replit:dev"
+
+# Run command (alternative syntax)
+run = "npm run replit:dev"
+
+# Environment variables
+[env]
+NODE_ENV = "development"
+QUASAR_MODE = "electron"
+ELECTRON_DISABLE_SANDBOX = "1"
+
+# Features configuration
+[features]
+# Enable package manager
+package_manager = "npm"
+
+# Enable build system
+build = true
+
+# Enable GitHub integration
+github = true
+
+# Enable AI features
+ai_enabled = true
+
+# Multiplayer collaboration
+multiplayer = true
+
+# Commands available in Shell
+[commands]
+# Development
+dev = "npm run dev"
+replit:dev = "npm run replit:dev"
+
+# Build
+build = "npm run build"
+replit:build = "npm run replit:build"
+build:win = "npm run build:win"
+
+# Package management
+install = "npm install"
+update = "npm update"
+audit = "npm audit fix"
+
+# GitHub integration
+release = "npm run github:release"
+
+# Utility
+clean = "rm -rf node_modules dist .quasar && npm install"
+lint = "npm run lint --if-present"
+test = "npm test --if-present"
+
+# Hints for Replit
+[hints]
+# Tell Replit this is a Quasar + Electron project
+framework = "quasar"
+runtime = "electron"
+ui_library = "vue"

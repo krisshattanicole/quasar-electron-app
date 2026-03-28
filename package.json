@@ -22,7 +22,11 @@
     "build:win": "quasar build -m electron -T windows",
     "replit:dev": "quasar dev -m electron",
     "replit:build": "quasar build -m electron",
-    "github:release": "node scripts/github-release.js"
+    "github:release": "node scripts/github-release.js",
+    "setup": "node scripts/setup.js",
+    "start": "quasar dev -m electron",
+    "clean": "rimraf dist .quasar www node_modules",
+    "postinstall": "echo \"✅ Installation complete! Run 'npm run setup' for guided setup.\""
   },
   "dependencies": {
     "@quasar/extras": "^1.16.9",
@@ -37,7 +41,8 @@
     "@types/node": "^20.10.0",
     "autoprefixer": "^10.4.16",
     "electron": "^28.0.0",
-    "electron-builder": "^24.9.1"
+    "electron-builder": "^24.9.1",
+    "rimraf": "^6.1.3"
   },
   "engines": {
     "node": "^22 || ^20 || ^18",

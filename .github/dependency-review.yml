@@ -1,0 +1,17 @@
+# Dependency Review
+# https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review
+
+# License compatibility
+allow:
+  - apache-2.0
+  - bsd-2-clause
+  - bsd-3-clause
+  - mit
+  - mpl-2.0
+  - isc
+  - cc0-1.0
+  - unlicense
+
+deny:
+  - gpl-3.0
+  - agpl-3.0
