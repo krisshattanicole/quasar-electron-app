@@ -29,10 +29,10 @@
     "postinstall": "echo \"✅ Installation complete! Run 'npm run setup' for guided setup.\""
   },
   "dependencies": {
-    "@quasar/extras": "^1.16.9",
+    "@quasar/extras": "^1.18.0",
     "pinia": "^2.1.7",
-    "quasar": "^2.14.0",
-    "vue": "^3.4.0",
+    "quasar": "^2.19.3",
+    "vue": "^3.5.32",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
